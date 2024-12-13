@@ -2,11 +2,14 @@
 # сумма 1 + 2 + . . . + K будет больше или равна N, и саму эту сумму.
 
 while True:
-    N = int(input('Введите целое число N, больше 1: '))
-    if N <= 1:
-        print('N должно быть больше 1.')
-    else:
-        break
+    try:
+        N = int(input('Введите целое число N, больше 1: '))
+        if N <= 1:
+            print('N должно быть больше 1.')
+        else:
+            break
+    except ValueError:
+        print('Что-то пошло не так. Введите корректное число.')
 K = 0
 summa_K = 0
 for i in range(1, N + 1):
