@@ -14,7 +14,7 @@ K = 0
 summa_K = 0
 for i in range(1, N + 1):
     K = i
-    summa_K = K * (K + 1) // 2  # сумма арифм прогрессии вычисляется S=n*(a1+ak)/2
+    summa_K = K * (1 + K) // 2  # сумма арифм прогрессии вычисляется Sn=n*(a1+an)/2
     if summa_K >= N:
         break
 print('Наименьшее значение K: ', K)
