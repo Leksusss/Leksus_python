@@ -17,15 +17,21 @@ while True:
         A1 = int(input('Введите целое число A1: '))
         B1 = int(input('Введите целое число B1: '))
         C1 = int(input('Введите целое число C1: '))
-        A2 = int(input('Введите целое число A2: '))
-        B2 = int(input('Введите целое число B2: '))
-        C2 = int(input('Введите целое число C2: '))
         break
     except ValueError:
         print('Что-то пошло не так.')
 
 A1, B1, C1 = ShiftRight3(A1, B1, C1)
 print("Первый набор после сдвига:", A1, B1, C1)
+
+while True:
+    try:
+        A2 = int(input('Введите целое число A2: '))
+        B2 = int(input('Введите целое число B2: '))
+        C2 = int(input('Введите целое число C2: '))
+        break
+    except ValueError:
+        print('Что-то пошло не так.')
 
 A2, B2, C2 = ShiftRight3(A2, B2, C2)
 print("Второй набор после сдвига:", A2, B2, C2)
