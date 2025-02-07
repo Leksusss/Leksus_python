@@ -23,7 +23,7 @@ while True:
             for slovo in bez_probel:
                 if len(slovo) > len(longest_word):
                     longest_word = slovo
-
-            print("Введена корректная строка:", stroka)
-            print("Самое длинное слово в нём:", longest_word)
-            break
+    break
+print("Введена корректная строка:", stroka)
+# noinspection PyUnboundLocalVariable
+print("Самое длинное слово в нём:", longest_word)
