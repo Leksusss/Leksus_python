@@ -25,5 +25,4 @@ while True:
                     longest_word = slovo
     break
 print("Введена корректная строка:", stroka)
-# noinspection PyUnboundLocalVariable
 print("Самое длинное слово в нём:", longest_word)
