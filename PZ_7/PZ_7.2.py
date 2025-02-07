@@ -23,6 +23,6 @@ while True:
             for slovo in bez_probel:
                 if len(slovo) > len(longest_word):
                     longest_word = slovo
-    break
-print("Введена корректная строка:", stroka)
-print("Самое длинное слово в нём:", longest_word)
+            print("Введена корректная строка:", stroka)
+            print("Самое длинное слово в нём:", longest_word)
+            break
