@@ -18,11 +18,11 @@ while True:
             print('Вы ввели не только слова. Повторите попытку')
             break
 
-        if proverka:
-            longest_word = ""
-            for slovo in bez_probel:
-                if len(slovo) > len(longest_word):
-                    longest_word = slovo
-            print("Введена корректная строка:", stroka)
-            print("Самое длинное слово в нём:", longest_word)
-            break
+    if proverka:
+        longest_word = ""
+        for slovo in bez_probel:
+            if len(slovo) > len(longest_word):
+                longest_word = slovo
+        print("Введена корректная строка:", stroka)
+        print("Самое длинное слово в нём:", longest_word)
+        break
