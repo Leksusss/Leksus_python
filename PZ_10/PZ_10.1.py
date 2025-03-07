@@ -15,7 +15,7 @@ BookMarket = {'Пушкин', 'Достоевский', 'Маяковский'}
 Galery = {'Чехов', 'Тютчев', 'Пушкин'}
 
 print("Магазины с Достоевским и Пушкиным: ")
-if "Достоевский" in magistr or "Пушкин" in magistr:
+if "Достоевский" in Magistr or "Пушкин" in Magistr:
     print("Магистр")
 if "Достоевский" in DomKnigi or "Пушкин" in DomKnigi:
     print("ДомКниги")
