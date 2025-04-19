@@ -24,16 +24,6 @@ if "Достоевский" in BookMarket and "Пушкин" in BookMarket:
 if "Достоевский" in Galery and "Пушкин" in Galery:
     print("Галерея")
 
-print('Магазины с Достоевским или Пушкиным: ')
-if "Достоевский" in Magistr or "Пушкин" in Magistr:
-    print("Магистр")
-if "Достоевский" in DomKnigi or "Пушкин" in DomKnigi:
-    print("ДомКниги")
-if "Достоевский" in BookMarket or "Пушкин" in BookMarket:
-    print("БукМаркет")
-if "Достоевский" in Galery or "Пушкин" in Galery:
-    print("Галерея")
-
 DomKnigi.add('Лермонтов')
 print(f'Теперь в магазине ДомКниги есть Лермонтов. Вот весь ассортимент: {DomKnigi}')
 
