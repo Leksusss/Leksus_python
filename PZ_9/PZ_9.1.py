@@ -4,42 +4,19 @@
 slovar = {'кошка': 'cat', 'собака': 'dog', 'птица': 'bird', 'мышь': 'mouse', 'крот': 'mole',
           'лиса': 'fox', 'крыса': 'rat', 'жаба': 'toad', 'олень': 'deer', 'паук': 'spider'}
 
+russ_word = list(slovar.keys())
+
 print('Вы можете перевести слова с русского языка на английский на выбор:'
       '1)кошка, 2)собака, 3)птица, 4)мышь, 5)крот, 6)лиса, 7)крыса, 8)жаба, 9)олень, 10)паук')
 
 while True:
     try:
-        vibor = int(input('Вы должны выбрать, какое слово хотите перевести в'
+        vibor = int(input('Вы должны выбрать, какое слово хотите перевести, в'
                           'зависимости от того, под каким числом стоит слово, от 1 до 10: '))
+        if 1 <= vibor <= 10:
+            perevod = russ_word[vibor-1]
+            print(f'{perevod} на английском будет {slovar[perevod]}')
+            break
+        print("Число должно быть от 1 до 10")
     except ValueError:
         print('Вы ввели некорректное число.')
-        continue
-
-    if vibor > 10:
-        print('Вы ввели число больше, чем вам дано')
-        continue
-    if vibor < 1:
-        print('Вы ввели число меньше, чем вам дано')
-        continue
-
-    if vibor == 1:
-        print('Кошка на английском будет', slovar['кошка'])
-    elif vibor == 2:
-        print('Собака на английском будет', slovar['собака'])
-    elif vibor == 3:
-        print('Птица на английском будет', slovar['птица'])
-    elif vibor == 4:
-        print('Мышь на английском будет', slovar['мышь'])
-    elif vibor == 5:
-        print('Крот на английском будет', slovar['крот'])
-    elif vibor == 6:
-        print('Лиса на английском будет', slovar['лиса'])
-    elif vibor == 7:
-        print('Крыса на английском будет', slovar['крыса'])
-    elif vibor == 8:
-        print('Жаба на английском будет', slovar['жаба'])
-    elif vibor == 9:
-        print('Олень на английском будет', slovar['олень'])
-    elif vibor == 10:
-        print('Паук на английском будет', slovar['паук'])
-    break
