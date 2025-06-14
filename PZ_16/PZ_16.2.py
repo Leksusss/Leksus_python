@@ -15,7 +15,6 @@ class Man(Human):
         Human.__init__(self, name, age, 'Мужской')
         self.family_status = family_status
         self.children = children
-
     def info(self):
         print(f"Мужчина: {self.name}, {self.age} лет, {self.family_status}, детей: {self.children}")
 
@@ -24,7 +23,6 @@ class Woman(Human):
         Human.__init__(self, name, age, 'Женский')
         self.family_status = family_status
         self.children = children
-
     def info(self):
         print(f"Женщина: {self.name}, {self.age} лет, {self.family_status}, детей: {self.children}")
 
