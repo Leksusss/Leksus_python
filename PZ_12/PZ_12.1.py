@@ -3,7 +3,7 @@
 
 try:
     numbers = input("Введите целые числа через пробел: ")
-    N = list(map(int, numbers_input.split()))
+    N = list(map(int, numbers.split()))
 
     K = int(input("Введите число для поиска: "))
 
