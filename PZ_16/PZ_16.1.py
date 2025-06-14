@@ -8,10 +8,8 @@ class Computer:
         self.brand = brand
         self.processor = processor
         self.ram = ram
-
     def print_information(self):
         print(f"Марка: {self.brand}, Процессор: {self.processor}, Оперативная память: {self.ram} ГБ")
-
 
 pc1 = Computer("Lenovo", "Intel Core i7", 16)
 pc1.print_information()
