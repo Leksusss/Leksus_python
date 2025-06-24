@@ -11,7 +11,7 @@ root.title("Certificate Self Service Portal")
 ttk.Label(root, text="Certificate Self Service Portal", font=("Arial", 14, "bold")).pack(pady=10)
 ttk.Label(root, text="Fill out the form to get a certificate.").pack()
 
-# весь ввод
+
 form_frame = ttk.Frame(root, padding=10)
 form_frame.pack(fill="x")
 
