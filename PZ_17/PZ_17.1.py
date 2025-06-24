@@ -38,7 +38,6 @@ desc_text = tk.Text(form_frame, height=4)
 desc_text.insert("1.0", "desc")
 desc_text.grid(row=len(fields), column=1, sticky="ew", padx=5, pady=2)
 
-# Кнопочка
 ttk.Button(root, text="Submit Form", command=submit_form).pack(pady=10)
 
 form_frame.columnconfigure(1, weight=1)
