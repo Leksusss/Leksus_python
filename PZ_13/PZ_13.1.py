@@ -11,9 +11,8 @@ for row in matrix:
 
 print("Средние арифметические для строк с нечетными номерами: ")
 
-row_number = 1
-for row in matrix:
-    if row_number % 2 != 0:
-        sred_arifm = sum(row) / len(row)
-        print(f"Строка {row_number}: {row} - Среднее арифметическое: {sred_arifm}")
-    row_number += 1
+number_rows = [matrix[0], matrix[2]]
+sred_arifm = list(map(lambda row: sum(row)/len(row), number_rows))
+
+print(f"Строка 1: {matrix[0]} - Среднее арифметическое: {sred_arifm[0]}")
+print(f"Строка 3: {matrix[2]} - Среднее арифметическое: {sred_arifm[1]}")

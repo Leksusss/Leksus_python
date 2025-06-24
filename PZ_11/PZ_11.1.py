@@ -16,12 +16,12 @@ t3.close()
 
 t4 = open('inf_2.txt', 'w', encoding="utf-8")
 t4.write('Исходные данные: ')
-t4.write('\n')
 t4.writelines(num)
+t4.write('\n')
 t4.close()
 
 
-t3 = open('data_1.txt')
+t3 = open('inf_1.txt')
 k = t3.read()
 k = k.split()
 for i in range(len(k)):
@@ -40,5 +40,5 @@ for x in k[:-1]:
 t4 = open('inf_2.txt', 'a', encoding="utf-8")
 t4.write(f'Количество элементов: {count}\n')
 t4.write(f'Сумма элементов: {sum_numbers}\n')
-t4.write(f'Элементы до n-1 умножены на элемент n: {multiplied})
+t4.write(f'Элементы до n-1 умножены на элемент n: {multiplied}')
 t4.close()
